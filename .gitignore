@@ -18,3 +18,10 @@ __pycache__/
 
 # VS Code configs
 .vscode/
+
+# mlflow
+mlruns/
+
+#models 
+models/
+*.pkl
