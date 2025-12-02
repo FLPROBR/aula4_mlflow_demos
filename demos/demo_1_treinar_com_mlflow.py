@@ -22,11 +22,11 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 mlflow.set_experiment("deteccao-fraude")
 
 # Iniciar run
-with mlflow.start_run(run_name="rf_baseline"):
+with mlflow.start_run(run_name="rf_run3"):
     
     # Parâmetros
-    n_estimators = 100
-    max_depth = 10
+    n_estimators = 50
+    max_depth = 20
     
     mlflow.log_param("n_estimators", n_estimators)
     mlflow.log_param("max_depth", max_depth)
